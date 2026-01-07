@@ -1,0 +1,8 @@
+sentence_transformer_dir: model/sentence_transformer.model
+classifier_joblib_path: model/classifier.joblib
+onnx_classifier_path: model/classifier.onnx
+onnx_embedding_model_path: model/embedding.onnx
+tokenizer_json_path: model/tokenizer.json
+embedding_dim: 384
+artifact_bucket_name: mlops-lab11-jsmolka
+image_repository_name: sentiment-app-onnx
