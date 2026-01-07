@@ -1,0 +1,30 @@
+[project]
+name = "ci-cd-exercise"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+integration = [
+    "pytest>=9.0.2",
+    "ruff>=0.14.10",
+    "pydantic>=2.12.5",
+    "pyyaml>=6.0.3",
+]
+inference = [
+    "tokenizers>=0.22.2",
+    "onnxruntime>=1.23.2",
+    "fastapi>=0.128.0",
+    "uvicorn>=0.40.0",
+]
+deployment = [
+    "boto3>=1.42.23",
+    "joblib>=1.5.3",
+    "onnxruntime>=1.23.2",
+    "pydantic>=2.12.5",
+    "skl2onnx>=1.19.1",
+    "torch>=2.9.1",
+    "transformers[torch]>=4.57.3",
+    "typer>=0.21.1",
+]
