@@ -1,10 +1,12 @@
 import numpy as np
 import onnxruntime as ort
 from fastapi import FastAPI
+from mangum import Mangum
 from pydantic import BaseModel
 from tokenizers import Tokenizer
 
 app = FastAPI()
+handler = Mangum(app)
 
 tokenizer = Tokenizer.from_file("model/tokenizer.json")
 embedding_session = ort.InferenceSession("model/embedding.onnx")

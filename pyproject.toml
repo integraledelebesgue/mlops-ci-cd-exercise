@@ -19,8 +19,10 @@ inference = [
     "uvicorn>=0.40.0",
 ]
 deployment = [
+    "awslambdaric>=3.1.1",
     "boto3>=1.42.23",
     "joblib>=1.5.3",
+    "mangum>=0.20.0",
     "onnxruntime>=1.23.2",
     "pydantic>=2.12.5",
     "skl2onnx>=1.19.1",
